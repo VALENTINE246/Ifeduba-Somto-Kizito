@@ -1,0 +1,19 @@
+FUNCTION grading(score)
+  if score >= 70 and score <= 100 THEN
+    RETURN "A"
+  ELSE IF score >= 60 AND score < 70 THEN 
+    RETURN "B"
+  ELSE IF score >= 50 AND score < 60 THEN 
+    RETURN "C"
+  ELSE IF score >= 45 AND score < 50 THEN 
+    RETURN "D"
+  ELSE IF score >= 0 AND score < 40 THEN 
+    RETURN "F"
+
+Input score
+
+IF score < 0 or score > 100 THEN
+  DISPLAY "Invalid score"
+ELSE
+  grade = calculate_grade(score)
+  DISPLAY grade
